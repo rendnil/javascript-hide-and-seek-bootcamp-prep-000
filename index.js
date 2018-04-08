@@ -35,46 +35,16 @@ function deepestChild(){
   var nodes = document.getElementById('grand-node').querySelectorAll('div')
   
   var current = nodes
-  var next = []
-  
-  
-  while (current.length > 0 ){
+  var next 
     
-    for(var i = 0; i<current.length; i++){
+for(var i = 0; i<current.length - 1; i++){
       
-      next = current[i].querySelectorAll('div')
-      //console.log(current)
-      
-    }
-   current = next.shift()
-  }
-  
-  return current[0]
-  
-  //return nodes[nodes.length - 1]
-  
-
- /* var current = nodes
-  var next = []
-  
-  while(Array.isArray(current)){
-      
-      for (let i = 0; i < current.length; i++){
-        
-        next.push(current[i])
-        
-      }
-    current = next.shift()
-    
+  next = current[i].querySelector('div')
+     
     
   }
   
-*/    
-    
-    
-    
-  
-  
+  return next
   
   
 }
