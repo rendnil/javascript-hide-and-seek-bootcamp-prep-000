@@ -36,16 +36,13 @@ function deepestChild(){
   
   var current = nodes
   var next 
-  
-  
-  while (current.length > 0 ){
     
-    for(var i = 0; i<current.length - 1; i++){
+for(var i = 0; i<current.length - 1; i++){
       
       next = current[i].querySelector('div')
       //console.log(current)
       
-    }
+  
    
    //current = next.shift()
   
