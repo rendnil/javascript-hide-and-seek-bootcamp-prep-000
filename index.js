@@ -35,21 +35,24 @@ function deepestChild(){
   var nodes = document.getElementById('grand-node').querySelectorAll('div')
   
   var current = nodes
-  var next = []
+  var next 
   
   
   while (current.length > 0 ){
     
-    for(var i = 0; i<current.length; i++){
+    for(var i = 0; i<current.length - 1; i++){
       
-      next = current[i].querySelectorAll('div')
+      next = current[i].querySelector('div')
       //console.log(current)
       
     }
-   current = next.shift()
+   
+   //current = next.shift()
+  
+    
   }
   
-  return current[0]
+  return next
   
   //return nodes[nodes.length - 1]
   
