@@ -39,42 +39,12 @@ function deepestChild(){
     
 for(var i = 0; i<current.length - 1; i++){
       
-      next = current[i].querySelector('div')
-      //console.log(current)
-      
-  
-   
-   //current = next.shift()
-  
+  next = current[i].querySelector('div')
+     
     
   }
   
   return next
-  
-  //return nodes[nodes.length - 1]
-  
-
- /* var current = nodes
-  var next = []
-  
-  while(Array.isArray(current)){
-      
-      for (let i = 0; i < current.length; i++){
-        
-        next.push(current[i])
-        
-      }
-    current = next.shift()
-    
-    
-  }
-  
-*/    
-    
-    
-    
-  
-  
   
   
 }
